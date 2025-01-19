@@ -2,16 +2,26 @@ import { createRoot } from "react-dom/client";
 import '/src/index.css';
 const root  = createRoot(document.getElementById('root'));
 
+function Page(){
+  return(
+    <div>
+      <header>
+        <img src="src/assets/React.png" alt="react-log" width='40px'/>
+      </header>
+      <main>
+        <h1>Reasons I am excited to learn React</h1>
+        <ol>
+          <li>React feels artistic</li>
+          <li>Its feels like i will be able to develop fast</li>
+        </ol>
+      </main>
+      <footer>
+        <small> &copy; 2024 Singh development. All Right reserved. </small>
+      </footer>
+    </div>
+  )
+}
+
 root.render(
-  <main>
-    <img src="src/assets/React.png" width='40px' alt="react-logo"/>
-    <h1>Fun facts about React</h1>
-    <ul>
-      <li>was first released in 2013</li>
-      <li>was originally created by Jordan Walke</li>
-      <li>has well over 200k stars on Github</li>
-      <li>Is maintained be Meta</li>
-      <li>Powers thousands of enterprise app ,including mobile apps</li>
-    </ul>
-  </main>
+  <Page />
 )
