@@ -1,11 +1,10 @@
 import { createRoot } from "react-dom/client";
-import { Fragment } from "react";
 import '/src/index.css';
 const root  = createRoot(document.getElementById('root'));
 
 function Page(){
   return(
-    <Fragment>
+    <>
       <header>
         <img src="src/assets/React.png" alt="react-log" width='40px'/>
       </header>
@@ -19,7 +18,7 @@ function Page(){
       <footer>
         <small> &copy; 2024 Singh development. All Right reserved. </small>
       </footer>
-    </Fragment>
+    </>
   )
 }
 
