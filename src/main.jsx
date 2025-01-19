@@ -1,11 +1,17 @@
 import { createRoot } from "react-dom/client";
-import '/src/index.css';
 const root  = createRoot(document.getElementById('root'));
 
 function Header(){
   return(
-      <header>
-        <img src="src/assets/React.png" alt="react-log" width='40px'/>
+      <header className="header">
+        <img src="src/assets/React.png" alt="react-log" className="header-img"/>
+        <nav >
+          <ul className="nav-list">
+            <li className="nav-list-item">Pricing</li>
+            <li className="nav-list-item">About</li>
+            <li className="nav-list-item">Contacts</li>
+          </ul>
+        </nav>
       </header>
   )
 }
